@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板语法</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="root">
+    
+    <h1>first</h1>
+    <h3>second</h3>
+    <hr/>
+    <a :href="Date.now()">页面跳转</a>
+    </div>
+    
+</body>
+<script type="text/javascript">
+
+new Vue({
+        el: '#root',
+        data: {
+            url: 'http://www.baidu.com'
+        }})
+
+</script>
+</html>

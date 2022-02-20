@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>回顾</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+
+        let class1 = 13
+
+        let persion = {
+            name: 'vue',
+            age: 18
+        }
+
+        Object.defineProperty(persion, 'sex', {
+            enumerable: false,
+            configurable: false,
+            writable: false,
+            value: 'man'
+        })
+
+        Object.defineProperty(persion, 'class1', {
+            get:function(){
+                return 1
+            },
+            set:function(value){
+                console.log(value)
+            }
+        })
+    </script>
+
+
+
+</body>
+</html>
